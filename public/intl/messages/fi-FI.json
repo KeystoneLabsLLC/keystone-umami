@@ -401,7 +401,7 @@
     "incorrect-username-password": "Väärä käyttäjänimi/salasana.",
     "invalid-domain": "Virheellinen verkkotunnus",
     "min-password-length": "Vähimmäispituus {n} merkkiä",
-    "new-version-available": "Umamista on saatavilla uusi versio {version}!",
+    "new-version-available": "Keystonesta on saatavilla uusi versio {version}!",
     "no-data-available": "Tietoja ei ole käytettävissä.",
     "no-event-data": "Tapahtumatietoja ei ole saatavilla.",
     "no-match-password": "Salasanat eivät täsmää",

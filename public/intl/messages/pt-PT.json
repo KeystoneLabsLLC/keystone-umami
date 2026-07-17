@@ -401,7 +401,7 @@
     "incorrect-username-password": "Nome de utilizador/senha incorretos.",
     "invalid-domain": "Domínio inválido",
     "min-password-length": "Comprimento mínimo de {n} caracteres",
-    "new-version-available": "Uma nova versão do Umami {version} está disponível!",
+    "new-version-available": "Uma nova versão do Keystone {version} está disponível!",
     "no-data-available": "Sem dados disponíveis.",
     "no-event-data": "Não existem dados de eventos disponíveis.",
     "no-match-password": "As senhas não coincidem",

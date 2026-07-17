@@ -401,7 +401,7 @@
     "incorrect-username-password": "Érvénytelen felhasználónév/jelszó.",
     "invalid-domain": "Érvénytelen domain",
     "min-password-length": "Minimum {n} karakter hosszúság",
-    "new-version-available": "Elérhető az Umami {version} új verziója!",
+    "new-version-available": "Elérhető az Keystone {version} új verziója!",
     "no-data-available": "Nincs rendelkezésre álló adat.",
     "no-event-data": "Nincs elérhető eseményadat.",
     "no-match-password": "A jelszavak nem egyeznek",

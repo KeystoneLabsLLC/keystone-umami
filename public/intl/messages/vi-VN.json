@@ -396,7 +396,7 @@
     "incorrect-username-password": "Sai tên đăng nhập/mật khẩu.",
     "invalid-domain": "Tên miền không hợp lệ",
     "min-password-length": "Độ dài tối thiểu {n} ký tự",
-    "new-version-available": "Có phiên bản mới của Umami {version}!",
+    "new-version-available": "Có phiên bản mới của Keystone {version}!",
     "no-data-available": "Không có dữ liệu.",
     "no-event-data": "Không có dữ liệu sự kiện.",
     "no-match-password": "Mật khẩu không khớp",

@@ -401,7 +401,7 @@
     "incorrect-username-password": "Nama pengguna/kata sandi salah.",
     "invalid-domain": "Domain tidak valid",
     "min-password-length": "Minimal {n} karakter",
-    "new-version-available": "Versi baru dari Umami {version} telah tersedia!",
+    "new-version-available": "Versi baru dari Keystone {version} telah tersedia!",
     "no-data-available": "Tidak ada data.",
     "no-event-data": "Tidak ada data peristiwa",
     "no-match-password": "Kata sandi tidak cocok",

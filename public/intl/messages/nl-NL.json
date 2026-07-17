@@ -401,7 +401,7 @@
     "incorrect-username-password": "Incorrecte gebruikersnaam/wachtwoord.",
     "invalid-domain": "Ongeldig domein",
     "min-password-length": "Minimale lengte van {n} tekens",
-    "new-version-available": "Een nieuwe versie van Umami {version} is beschikbaar!",
+    "new-version-available": "Een nieuwe versie van Keystone {version} is beschikbaar!",
     "no-data-available": "Geen gegevens beschikbaar.",
     "no-event-data": "Geen gegevens over de gebeurtenis beschikbaar.",
     "no-match-password": "Wachtwoorden komen niet overeen",

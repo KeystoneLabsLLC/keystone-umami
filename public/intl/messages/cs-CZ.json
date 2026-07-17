@@ -401,7 +401,7 @@
     "incorrect-username-password": "Nesprávné jméno/heslo.",
     "invalid-domain": "Neplatná doména",
     "min-password-length": "Minimální délka {n} znaků",
-    "new-version-available": "Je k dispozici nová verze Umami {version}!",
+    "new-version-available": "Je k dispozici nová verze Keystone {version}!",
     "no-data-available": "Žádná data.",
     "no-event-data": "Nejsou k dispozici žádná data o událostech.",
     "no-match-password": "Hesla se neschodují",

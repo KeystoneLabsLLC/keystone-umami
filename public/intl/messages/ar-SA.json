@@ -391,7 +391,7 @@
     "incorrect-username-password": "اسم المستخدم او كلمة المرور غير صحيحة.",
     "invalid-domain": "النطاق غير صحيح",
     "min-password-length": "اقل عدد مسموح به {n} حرف/أحرف",
-    "new-version-available": "إصدار جديد من Umami {version} متاح!",
+    "new-version-available": "إصدار جديد من Keystone {version} متاح!",
     "no-data-available": "لا توجد بيانات متاحة.",
     "no-event-data": "لا توجد بيانات الحدث متاحة.",
     "no-match-password": "كلمة المرور غير متطابقة",

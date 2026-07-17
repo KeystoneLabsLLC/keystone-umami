@@ -391,7 +391,7 @@
     "incorrect-username-password": "Εσφαλμένο όνομα χρήστη / κωδικός πρόσβασης.",
     "invalid-domain": "Μη έγκυρος τομέας",
     "min-password-length": "Ελάχιστο μήκος {n} χαρακτήρων",
-    "new-version-available": "Μια νέα έκδοση του Umami {version} είναι διαθέσιμη!",
+    "new-version-available": "Μια νέα έκδοση του Keystone {version} είναι διαθέσιμη!",
     "no-data-available": "Δεν υπάρχουν διαθέσιμα δεδομένα.",
     "no-event-data": "Δεν υπάρχουν διαθέσιμα δεδομένα συμβάντων.",
     "no-match-password": "Οι κωδικοί πρόσβασης δεν ταιριάζουν",

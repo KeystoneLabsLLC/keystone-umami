@@ -391,7 +391,7 @@
     "incorrect-username-password": "Неверное имя пользователя/пароль.",
     "invalid-domain": "Некорректный домен",
     "min-password-length": "Минимальная длина {n} символов",
-    "new-version-available": "Вышла новая версия Umami {version}!",
+    "new-version-available": "Вышла новая версия Keystone {version}!",
     "no-data-available": "Нет данных.",
     "no-event-data": "Данные о событиях отсутствуют.",
     "no-match-password": "Пароли не совпадают",

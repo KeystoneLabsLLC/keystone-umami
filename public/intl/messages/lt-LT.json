@@ -401,7 +401,7 @@
     "incorrect-username-password": "Neteisingas vartotojo vardas/slaptažodis.",
     "invalid-domain": "Klaidingas domenas",
     "min-password-length": "Reikia bent {n} simbolių",
-    "new-version-available": "Išleista nauja 'Umami' {version} versija!",
+    "new-version-available": "Išleista nauja 'Keystone' {version} versija!",
     "no-data-available": "Nėra jokių duomenų.",
     "no-event-data": "Jokių duomenų apie įvykius nėra.",
     "no-match-password": "Slaptažodžiai nesutampa",

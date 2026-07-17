@@ -401,7 +401,7 @@
     "incorrect-username-password": "Pogrešno korisničko ime i/ili šifra.",
     "invalid-domain": "Nevalidna domena. Ne uključujte http/https.",
     "min-password-length": "Minimalna dužina od {n} karaktera",
-    "new-version-available": "Nova verzija Umami {version} je dostupna!",
+    "new-version-available": "Nova verzija Keystone {version} je dostupna!",
     "no-data-available": "Nema dostupnih podataka.",
     "no-event-data": "Nema dostupnih podataka o događajima.",
     "no-match-password": "Šifre se ne poklapaju.",

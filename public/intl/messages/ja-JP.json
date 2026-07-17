@@ -391,7 +391,7 @@
     "incorrect-username-password": "ユーザー名またはパスワードが間違っています。",
     "invalid-domain": "無効なドメインです。http/httpsを含めないでください。",
     "min-password-length": "最小文字数は{n}文字です",
-    "new-version-available": "Umamiの新しいバージョン{version}が利用可能です！",
+    "new-version-available": "Keystoneの新しいバージョン{version}が利用可能です！",
     "no-data-available": "データがありません。",
     "no-event-data": "イベントデータがありません。",
     "no-match-password": "パスワードが一致しません。",

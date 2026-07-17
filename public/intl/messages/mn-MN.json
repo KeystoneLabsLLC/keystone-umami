@@ -391,7 +391,7 @@
     "incorrect-username-password": "Буруу хэрэглэгчийн нэр/нууц үг.",
     "invalid-domain": "Буруу домэйн",
     "min-password-length": "Хамгийн багадаа {n} тэмдэгт",
-    "new-version-available": "Umami-н шинэ хувилбар {version} гарсан байна!",
+    "new-version-available": "Keystone-н шинэ хувилбар {version} гарсан байна!",
     "no-data-available": "Өгөгдөл алга.",
     "no-event-data": "Үйлдлийн өгөгдөл алга.",
     "no-match-password": "Нууц үг тохирохгүй байна.",

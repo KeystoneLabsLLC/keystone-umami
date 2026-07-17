@@ -401,7 +401,7 @@
     "incorrect-username-password": "Pengguna/kata laluan tidak betul.",
     "invalid-domain": "Domain tidak sah",
     "min-password-length": "Panjang minimum {n} aksara",
-    "new-version-available": "Versi baharu Umami {version} tersedia!",
+    "new-version-available": "Versi baharu Keystone {version} tersedia!",
     "no-data-available": "Tiada data yang boleh didapati.",
     "no-event-data": "Tiada data peristiwa tersedia.",
     "no-match-password": "Kata laluan tidak sepadan",

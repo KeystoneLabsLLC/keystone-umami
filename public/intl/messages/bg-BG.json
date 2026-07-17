@@ -391,7 +391,7 @@
     "incorrect-username-password": "Неправилно потребителско име и/или парола.",
     "invalid-domain": "Невалиден домейн. Не включвайте http/https.",
     "min-password-length": "Минимална дължина от {n} символа",
-    "new-version-available": "Има нова версия на Umami {version}!",
+    "new-version-available": "Има нова версия на Keystone {version}!",
     "no-data-available": "Няма налични данни.",
     "no-event-data": "Няма налични данни за събитие.",
     "no-match-password": "Паролите не съвпадат.",

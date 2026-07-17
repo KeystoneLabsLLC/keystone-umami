@@ -401,7 +401,7 @@
     "incorrect-username-password": "Hatalı kullanıcı adı ya da parola.",
     "invalid-domain": "Geçersiz alan adı",
     "min-password-length": "Minimum {n} karakter uzunluğu",
-    "new-version-available": "Yeni versiyon Umami {version} mevcut!",
+    "new-version-available": "Yeni versiyon Keystone {version} mevcut!",
     "no-data-available": "Henüz hiç veri yok.",
     "no-event-data": "Hiçbir olay verisi mevcut değil.",
     "no-match-password": "Parolalar uyuşmuyor",

@@ -401,7 +401,7 @@
     "incorrect-username-password": "Ugyldigt brugernavn/adgangskode.",
     "invalid-domain": "Ugyldigt domæne",
     "min-password-length": "Minimumlængde på {n} tegn",
-    "new-version-available": "En ny version af Umami {version} er tilgængelig!",
+    "new-version-available": "En ny version af Keystone {version} er tilgængelig!",
     "no-data-available": "Ingen data tilgængelig.",
     "no-event-data": "Ingen begivenhedsdata tilgængelig.",
     "no-match-password": "Adgangskoderne matcher ikke",

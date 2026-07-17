@@ -403,7 +403,7 @@
     "incorrect-username-password": "Nombre de usuario o contraseña incorrectos.",
     "invalid-domain": "Dominio inválido",
     "min-password-length": "Longitud mínima de {n} caracteres",
-    "new-version-available": "Una nueva versión de Umami {version} está disponible",
+    "new-version-available": "Una nueva versión de Keystone {version} está disponible",
     "no-data-available": "No hay información disponible.",
     "no-event-data": "No hay datos de eventos disponibles.",
     "no-match-password": "Las contraseñas no coinciden",

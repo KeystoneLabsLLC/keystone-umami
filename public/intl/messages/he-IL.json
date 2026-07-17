@@ -391,7 +391,7 @@
     "incorrect-username-password": "שם משתמש או סיסמה לא נכונים",
     "invalid-domain": "דומיין לא תקין",
     "min-password-length": "אורך מינימלי של {n} תווים",
-    "new-version-available": "גרסה חדשה של Umami {version} זמינה!",
+    "new-version-available": "גרסה חדשה של Keystone {version} זמינה!",
     "no-data-available": "אין מידע זמין",
     "no-event-data": "אין נתוני אירועים זמינים.",
     "no-match-password": "סיסמאות לא תואמות",

@@ -401,7 +401,7 @@
     "incorrect-username-password": "Nume utilizator / parolă incorecte.",
     "invalid-domain": "Domeniul nu este valid",
     "min-password-length": "Lungimea minimă este de {n} caractere",
-    "new-version-available": "O nouă versiune de Umami {version} este disponibilă!",
+    "new-version-available": "O nouă versiune de Keystone {version} este disponibilă!",
     "no-data-available": "Nicio informație disponibilă.",
     "no-event-data": "Nu sunt disponibile date legate de eveniment.",
     "no-match-password": "Parolele nu se potrivesc",

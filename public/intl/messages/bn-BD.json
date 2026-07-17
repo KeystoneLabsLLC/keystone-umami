@@ -391,7 +391,7 @@
     "incorrect-username-password": "ভুল ব্যবহারকারীর নাম/পাসওয়ার্ড।",
     "invalid-domain": "ভুল ডোমেন",
     "min-password-length": "সর্বনিম্ন {n} অক্ষর",
-    "new-version-available": "Umami {version}-এর নতুন সংস্করণ পাওয়া যাচ্ছে!",
+    "new-version-available": "Keystone {version}-এর নতুন সংস্করণ পাওয়া যাচ্ছে!",
     "no-data-available": "কোন তথ্য নেই।",
     "no-event-data": "কোনো ইভেন্ট ডেটা পাওয়া যায়নি।",
     "no-match-password": "পাসওয়ার্ড মেলে না",

@@ -391,7 +391,7 @@
     "incorrect-username-password": "نام کاربری / رمز نادرست است.",
     "invalid-domain": "دامنه نامعتبر است.",
     "min-password-length": "حداقل طول {n} کاراکتر است.",
-    "new-version-available": "نسخه‌ی جدیدی از Umami {version} در دسترس است.",
+    "new-version-available": "نسخه‌ی جدیدی از Keystone {version} در دسترس است.",
     "no-data-available": "اطلاعاتی موجود نیست.",
     "no-event-data": "هیچ داده‌ای برای این رویداد وجود ندارد.",
     "no-match-password": "رمزها یکسان نیستند",
