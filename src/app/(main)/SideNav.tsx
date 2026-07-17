@@ -5,7 +5,6 @@ import {
   Focusable,
   Icon,
   Row,
-  Text,
   Tooltip,
   TooltipTrigger,
 } from '@umami/react-zen';
@@ -92,9 +91,9 @@ export function SideNav(props: any) {
       >
         <Row padding="3" alignItems="center" justifyContent="space-between" flexGrow="1">
           {!isCollapsed && (
-            <IconLabel icon={<Logo />}>
-              <Text weight="bold">umami</Text>
-            </IconLabel>
+            <Icon>
+              <Logo />
+            </Icon>
           )}
           <PanelButton />
         </Row>
