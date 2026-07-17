@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="keystone-brand/logos/icon-green.svg" alt="Keystone Logo" width="100">
+  <img src="public/android-chrome-192x192.png" alt="Keystone Logo" width="100">
 </p>
 
 <h1 align="center">Keystone</h1>
