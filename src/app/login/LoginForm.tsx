@@ -31,7 +31,7 @@ export function LoginForm() {
 
   return (
     <Column justifyContent="center" alignItems="center" gap="6">
-      <Icon size="lg">
+      <Icon size="xl">
         <Logo />
       </Icon>
       <Form onSubmit={handleSubmit} error={getErrorMessage(error)} style={{ minWidth: 300 }}>
