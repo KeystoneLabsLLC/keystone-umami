@@ -1,7 +1,73 @@
+/* Keystone brand theme — palette from keystonelab.net */
 :root {
-  --font-family: var(--font-inter), sans-serif;
-  --primary: oklch(62.3% 0.214 259.815);
-  --primary-foreground: oklch(98.5% 0 0);
+  --font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-heading: var(--font-spectral), Georgia, serif;
+  --font-data: var(--font-space-mono), Menlo, Consolas, monospace;
+  --keystone-green: #9dbe3c;
+  --keystone-ink: #0e0e0e;
+  --primary: var(--keystone-green);
+  --primary-foreground: var(--keystone-ink);
+}
+
+/* Light theme: paper + ink, green as the single accent */
+[data-theme='light'],
+.light {
+  --primary: var(--keystone-green);
+  --primary-foreground: var(--keystone-ink);
+  --surface-base: #ffffff;
+  --surface-raised: #f4f4f1;
+  --surface-sunken: #ecece4;
+  --surface-overlay: #ffffff;
+  --surface-inverted: #0e0e0e;
+  --text-primary: #0e0e0e;
+  --text-muted: #6c6c66;
+  --text-disabled: #b8b8b0;
+  --border-default: #d8d8d0;
+  --border-muted: #ecece4;
+  --border-strong: #b8b8b0;
+  --interactive-bg: #f4f4f1;
+  --interactive-bg-hover: #ecece4;
+  --interactive-bg-pressed: #d8d8d0;
+  --focus-ring: var(--keystone-green);
+}
+
+/* Dark theme: matches the site's dark sections */
+[data-theme='dark'],
+.dark {
+  --primary: var(--keystone-green);
+  --primary-foreground: var(--keystone-ink);
+  --surface-base: #0a0a0a;
+  --surface-raised: #161614;
+  --surface-sunken: #111110;
+  --surface-overlay: #161614;
+  --surface-inverted: #f4f4f1;
+  --text-primary: #f4f4f1;
+  --text-muted: #a9a9a0;
+  --text-disabled: #6c6c66;
+  --border-default: #2a2a2a;
+  --border-muted: #1f1f1d;
+  --border-strong: #3a3a34;
+  --interactive-bg: #1c1c1a;
+  --interactive-bg-hover: #26261f;
+  --interactive-bg-pressed: #2a2a2a;
+  --focus-ring: var(--keystone-green);
+  --focus-ring-offset: #0a0a0a;
+}
+
+/* Spectral carries structural weight (headlines); Space Grotesk does the clear work */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+code,
+pre,
+.code-textarea textarea {
+  font-family: var(--font-data);
 }
 
 html,
