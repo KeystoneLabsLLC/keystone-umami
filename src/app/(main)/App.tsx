@@ -8,12 +8,11 @@ import { TopNav } from '@/app/(main)/TopNav';
 import { useConfig, useLoginQuery, useNavigation, useTeamQuery } from '@/components/hooks';
 import { LAST_TEAM_CONFIG } from '@/lib/constants';
 import { removeItem, setItem } from '@/lib/storage';
-import { UpdateNotice } from './UpdateNotice';
 
 export function App({ children }) {
   const { user, isLoading, error } = useLoginQuery();
   const config = useConfig();
-  const { pathname, router, teamId } = useNavigation();
+  const { router, teamId } = useNavigation();
   const { isLoading: isTeamLoading, error: teamError } = useTeamQuery(teamId);
 
   useEffect(() => {
@@ -66,10 +65,6 @@ export function App({ children }) {
         <TopNav />
         <Column alignItems="center">{children}</Column>
       </Column>
-      <UpdateNotice user={user} config={config} />
-      {process.env.NODE_ENV === 'production' && !pathname.includes('/share/') && (
-        <Script src={`${process.env.basePath || ''}/telemetry.js`} />
-      )}
       {process.env.selfTrack && (
         <Script
           async
