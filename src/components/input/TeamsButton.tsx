@@ -30,6 +30,18 @@ export function TeamsButton() {
 
   const cloudMode = !!process.env.cloudMode;
 
+  // Non-admins are locked to their team view: show the current team as a static
+  // label with no switcher — no switching teams, no "manage teams", no jump to
+  // the personal account view. Admins keep the full switcher below.
+  if (!user?.isAdmin) {
+    return (
+      <Row alignItems="center" gap padding maxWidth="200px">
+        <Icon>{teamId ? <Users /> : <User />}</Icon>
+        <Text truncate>{label}</Text>
+      </Row>
+    );
+  }
+
   const getUrl = (url: string) => {
     return cloudMode ? `${process.env.cloudUrl}${url}` : url;
   };
