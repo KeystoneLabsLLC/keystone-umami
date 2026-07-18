@@ -1,6 +1,7 @@
 export * from './board';
 export * from './invitation';
 export * from './link';
+export * from './loginAttempt';
 export * from './pixel';
 export * from './report';
 export * from './segment';

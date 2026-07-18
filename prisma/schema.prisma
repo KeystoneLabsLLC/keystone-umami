@@ -238,6 +238,15 @@ model Invitation {
   @@map("invitation")
 }
 
+model LoginAttempt {
+  id         String    @id() @map("login_attempt_id") @db.Uuid
+  identifier String    @db.VarChar(255)
+  createdAt  DateTime? @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  @@index([identifier, createdAt])
+  @@map("login_attempt")
+}
+
 model TeamUser {
   id        String    @id() @map("team_user_id") @db.Uuid
   teamId    String    @map("team_id") @db.Uuid

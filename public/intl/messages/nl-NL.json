@@ -451,6 +451,7 @@
     "password-too-short": "Password must be at least 10 characters.",
     "password-too-common": "This password is too common. Choose a less predictable one.",
     "password-contains-username": "Password must not contain your username.",
-    "password-breached": "This password appeared in a known data breach. Choose a different one."
+    "password-breached": "This password appeared in a known data breach. Choose a different one.",
+    "too-many-login-attempts": "Too many failed attempts. Please wait a few minutes and try again."
   }
 }
