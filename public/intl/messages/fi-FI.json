@@ -380,7 +380,18 @@
     "website-id": "Verkkosivun ID",
     "websites": "Verkkosivut",
     "window": "Ikkuna",
-    "yesterday": "Eilen"
+    "yesterday": "Eilen",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Kirjoita {confirmation} alla olevaan kenttään vahvistaaksesi.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Näytä vain toistot, joiden kesto on tämä tai enemmän.",
     "viewed-page": "Katsottu sivu",
     "upgrade-required": "Tämä ominaisuus vaatii {plan}-tilauksen.",
-    "visitor-log": "Vierailija maasta <b>{country}</b> selaimella <b>{browser}</b> laitteella <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Vierailija maasta <b>{country}</b> selaimella <b>{browser}</b> laitteella <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

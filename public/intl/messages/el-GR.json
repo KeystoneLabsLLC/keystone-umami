@@ -370,7 +370,18 @@
     "website-id": "ID ιστότοπου",
     "websites": "Ιστότοποι",
     "window": "Παράθυρο",
-    "yesterday": "Χθες"
+    "yesterday": "Χθες",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Πληκτρολογήστε {confirmation} στο παρακάτω πεδίο για επιβεβαίωση.",
@@ -422,6 +433,8 @@
     "user-deleted": "Ο χρήστης διαγράφηκε.",
     "replay-min-duration-description": "Εμφάνιση μόνο αναπαραγωγών με αυτή ή μεγαλύτερη διάρκεια.",
     "viewed-page": "Προβολή σελίδας",
-    "visitor-log": "Επισκέπτης από <b>{country}</b> χρησιμοποιώντας <b>{browser}</b> σε <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Επισκέπτης από <b>{country}</b> χρησιμοποιώντας <b>{browser}</b> σε <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

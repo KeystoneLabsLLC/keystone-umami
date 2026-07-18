@@ -380,7 +380,18 @@
     "website-id": "ID situs web",
     "websites": "Situs web",
     "window": "Jendela",
-    "yesterday": "Kemarin"
+    "yesterday": "Kemarin",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Ketik {confirmation} pada kotak di bawah untuk mengonfirmasi.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Hanya tampilkan ulangan dengan durasi ini atau lebih.",
     "viewed-page": "Halaman dilihat",
     "upgrade-required": "Fitur ini memerlukan langganan paket {plan}.",
-    "visitor-log": "Pengunjung dari <b>{country}</b> dengan <b>{browser}</b> di <b>{device}</b> <b>{os}</b>"
+    "visitor-log": "Pengunjung dari <b>{country}</b> dengan <b>{browser}</b> di <b>{device}</b> <b>{os}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

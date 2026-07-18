@@ -382,7 +382,18 @@
     "window": "Ventana",
     "yesterday": "Ayer",
     "revenue-property": "Propiedad de ganancias",
-    "user-property": "Propiedad de usuario"
+    "user-property": "Propiedad de usuario",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Escriba {confirmation} en el cuadro a continuación para confirmar.",
@@ -436,6 +447,8 @@
     "replay-min-duration-description": "Mostrar solo las repeticiones con esta duración o superior.",
     "viewed-page": "Página vista",
     "upgrade-required": "Esta función requiere una suscripción al plan {plan}.",
-    "visitor-log": "Visitante desde <b>{country}</b> usando <b>{browser}</b> en <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Visitante desde <b>{country}</b> usando <b>{browser}</b> en <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

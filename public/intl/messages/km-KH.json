@@ -370,7 +370,18 @@
     "website-id": "ID គេហទំព័រ",
     "websites": "គេហទំព័រ",
     "window": "បង្អួច",
-    "yesterday": "ម្សិលមិញ"
+    "yesterday": "ម្សិលមិញ",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "សសេរ {confirmation} នៅក្នុងប្រអប់ខាងក្រោមដើម្បីបញ្ជាក់។",
@@ -422,6 +433,8 @@
     "user-deleted": "អ្នកប្រើប្រាស់ត្រូវបានលុបចោល។",
     "replay-min-duration-description": "បង្ហាញតែការចាក់ឡើងវិញដែលមានរយៈពេលនេះ ឬខ្ពស់ជាងនេះ។",
     "viewed-page": "ទំព័រដែលបានមើល",
-    "visitor-log": "អ្នកមើលពីប្រទេស <b>{country}</b> ប្រើប្រាស់កម្មវិធី <b>{browser}</b> លើឧបករណ៍ <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "អ្នកមើលពីប្រទេស <b>{country}</b> ប្រើប្រាស់កម្មវិធី <b>{browser}</b> លើឧបករណ៍ <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

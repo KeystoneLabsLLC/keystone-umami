@@ -380,7 +380,18 @@
     "website-id": "ID laman web",
     "websites": "Laman web",
     "window": "Tetingkap",
-    "yesterday": "Semalam"
+    "yesterday": "Semalam",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Taip {confirmation} dalam kotak di bawah untuk mengesahkan.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Tunjukkan sahaja ulangan dengan tempoh ini atau lebih.",
     "viewed-page": "Halaman dilihat",
     "upgrade-required": "Ciri ini memerlukan langganan pelan {plan}.",
-    "visitor-log": "Pelawat dari <b>{country}</b> mengguna <b>{browser}</b> pada <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Pelawat dari <b>{country}</b> mengguna <b>{browser}</b> pada <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

@@ -370,7 +370,18 @@
     "website-id": "Вебийн ID",
     "websites": "Вебүүд",
     "window": "Цонх",
-    "yesterday": "Өчигдөр"
+    "yesterday": "Өчигдөр",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Доорх хэсэгт {confirmation} гэж бичин баталгаажуулна уу.",
@@ -422,6 +433,8 @@
     "user-deleted": "Хэрэглэгч устсан.",
     "replay-min-duration-description": "Зөвхөн энэ эсвэл үүнээс их үргэлжлэх хугацаатай тоглуулалтуудыг харуул.",
     "viewed-page": "Үзсэн хуудас",
-    "visitor-log": "<b>{country}</b> улсаас <b>{os}</b> <b>{device}</b> дээр <b>{browser}</b> хөтөч ашиглан орсон"
+    "visitor-log": "<b>{country}</b> улсаас <b>{os}</b> <b>{device}</b> дээр <b>{browser}</b> хөтөч ашиглан орсон",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

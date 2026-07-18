@@ -380,7 +380,18 @@
     "website-id": "ID del lloc web",
     "websites": "Llocs web",
     "window": "Finestra",
-    "yesterday": "Ahir"
+    "yesterday": "Ahir",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Escrigui {confirmation} al cuadre inferior per confirmar.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Mostra només les reproduccions amb aquesta durada o superior.",
     "viewed-page": "Pàgina vista",
     "upgrade-required": "Aquesta funció requereix una subscripció al pla {plan}.",
-    "visitor-log": "Visitant de <b>{country}</b> usant <b>{browser}</b> a <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Visitant de <b>{country}</b> usant <b>{browser}</b> a <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

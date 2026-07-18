@@ -380,7 +380,18 @@
     "website-id": "Web sitesi ID",
     "websites": "Web siteleri",
     "window": "Pencere",
-    "yesterday": "Dün"
+    "yesterday": "Dün",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Onaylamak için aşağıdaki kutuya {confirmation} yazın.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Yalnızca bu süre veya daha uzun süren yeniden oynatmaları göster.",
     "viewed-page": "Görüntülenen sayfa",
     "upgrade-required": "Bu özellik {plan} plan aboneliği gerektirir.",
-    "visitor-log": "Yeni ziyaretçi: <b>{country}</b>, <b>{os}</b>, <b>{device}</b>, <b>{browser}</b>"
+    "visitor-log": "Yeni ziyaretçi: <b>{country}</b>, <b>{os}</b>, <b>{device}</b>, <b>{browser}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

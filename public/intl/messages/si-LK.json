@@ -370,7 +370,18 @@
     "website-id": "වෙබ් අඩවි ID",
     "websites": "වෙබ් අඩවි",
     "window": "කවුළුව",
-    "yesterday": "ඊයේ"
+    "yesterday": "ඊයේ",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "තහවුරු කිරීමට පහත කොටුවේ {confirmation} ටයිප් කරන්න.",
@@ -422,6 +433,8 @@
     "user-deleted": "පරිශීලකයා මකා දමන ලදි.",
     "replay-min-duration-description": "මෙම කාලය හෝ ඊට වඩා වැඩි රිප්ලේ පමණක් පෙන්වන්න.",
     "viewed-page": "නැරඹූ පිටුව",
-    "visitor-log": "<b>{country}</b> සිට <b>{os}</b> <b>{device}</b> හි <b>{browser}</b> භාවිතා කරන නරඹන්නා"
+    "visitor-log": "<b>{country}</b> සිට <b>{os}</b> <b>{device}</b> හි <b>{browser}</b> භාවිතා කරන නරඹන්නා",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

@@ -380,7 +380,18 @@
     "website-id": "ID sito web",
     "websites": "Siti web",
     "window": "Finestra",
-    "yesterday": "Ieri"
+    "yesterday": "Ieri",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Digita {confirmation} nella casella sottostante per confermare.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Mostra solo le riproduzioni con questa durata o superiore.",
     "viewed-page": "Pagina visualizzata",
     "upgrade-required": "Questa funzionalità richiede un abbonamento al piano {plan}.",
-    "visitor-log": "Utenti da <b>{country}</b> tramite <b>{browser}</b> su <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Utenti da <b>{country}</b> tramite <b>{browser}</b> su <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

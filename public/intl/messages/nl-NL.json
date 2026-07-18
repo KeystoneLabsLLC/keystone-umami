@@ -380,7 +380,18 @@
     "website-id": "Website-ID",
     "websites": "Websites",
     "window": "Venster",
-    "yesterday": "Gisteren"
+    "yesterday": "Gisteren",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Typ {confirmation} in het veld hieronder om te bevestigen.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Toon alleen herhalingen met deze of een langere duur.",
     "viewed-page": "Bekeken pagina",
     "upgrade-required": "Deze functie vereist een {plan}-abonnement.",
-    "visitor-log": "Bezoeker uit <b>{country}</b> met <b>{browser}</b> op een <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Bezoeker uit <b>{country}</b> met <b>{browser}</b> op een <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

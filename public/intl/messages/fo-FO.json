@@ -380,7 +380,18 @@
     "website-id": "Heimasíðu-ID",
     "websites": "Heimasíður",
     "window": "Gluggi",
-    "yesterday": "Í gjár"
+    "yesterday": "Í gjár",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Skriva {confirmation} í teigin niðanfyri at vátta.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Vís bert endurspælingar við hesa ella longri longd.",
     "viewed-page": "Síð vís",
     "upgrade-required": "Hesin virknisháttur krevur eitt {plan}-lyftirtak.",
-    "visitor-log": "Vitjandi frá <b>{country}</b> brúkar <b>{browser}</b> á <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Vitjandi frá <b>{country}</b> brúkar <b>{browser}</b> á <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

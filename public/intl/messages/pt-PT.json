@@ -380,7 +380,18 @@
     "website-id": "ID do website",
     "websites": "Websites",
     "window": "Janela",
-    "yesterday": "Ontem"
+    "yesterday": "Ontem",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Escreva {confirmation} na caixa abaixo para confirmar.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Mostrar apenas repetições com esta duração ou superior.",
     "viewed-page": "Página visualizada",
     "upgrade-required": "Esta funcionalidade requer uma subscrição do plano {plan}.",
-    "visitor-log": "Visitante de <b>{country}</b> a usar <b>{browser}</b> no <b>{device}</b> <b>{os}</b>"
+    "visitor-log": "Visitante de <b>{country}</b> a usar <b>{browser}</b> no <b>{device}</b> <b>{os}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

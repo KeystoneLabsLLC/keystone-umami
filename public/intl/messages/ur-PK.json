@@ -370,7 +370,18 @@
     "website-id": "Website ID",
     "websites": "ویب سائٹس",
     "window": "ونڈو",
-    "yesterday": "کل"
+    "yesterday": "کل",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "تصدیق کے لیے نیچے دیے گئے خانے میں {confirmation} ٹائپ کریں۔",
@@ -422,6 +433,8 @@
     "user-deleted": "صارف حذف ہو گیا۔",
     "replay-min-duration-description": "صرف وہ ری پلے دکھائیں جو اس مدت یا اس سے زیادہ ہوں۔",
     "viewed-page": "دیکھا گیا صفحہ",
-    "visitor-log": "<b>{os}</b> <b>{device}</b> پر <b>{browser}</b> کا استعمال کرتے ہوئے <b>{country}</b> سے آنے والا"
+    "visitor-log": "<b>{os}</b> <b>{device}</b> پر <b>{browser}</b> کا استعمال کرتے ہوئے <b>{country}</b> سے آنے والا",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

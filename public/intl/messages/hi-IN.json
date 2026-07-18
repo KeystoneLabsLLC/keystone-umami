@@ -370,7 +370,18 @@
     "website-id": "वेबसाइट ID",
     "websites": "वेबसाइटों",
     "window": "विंडो",
-    "yesterday": "कल"
+    "yesterday": "कल",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "पुष्टि करने के लिए नीचे बॉक्स में {confirmation} टाइप करें।",
@@ -422,6 +433,8 @@
     "user-deleted": "उपयोगकर्ता हटाया गया।",
     "replay-min-duration-description": "केवल इस अवधि या उससे अधिक की रिप्ले दिखाएं।",
     "viewed-page": "देखा गया पेज",
-    "visitor-log": "<b>{country}</b> का आगंतुक, जो <b>{browser}</b> का उपयोग करता है, <b>{os}</b> यन्त्र पर"
+    "visitor-log": "<b>{country}</b> का आगंतुक, जो <b>{browser}</b> का उपयोग करता है, <b>{os}</b> यन्त्र पर",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

@@ -370,7 +370,18 @@
     "website-id": "网站 ID",
     "websites": "网站",
     "window": "窗口",
-    "yesterday": "昨天"
+    "yesterday": "昨天",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "请在下方输入框中输入 {confirmation} 以确认操作。",
@@ -422,6 +433,8 @@
     "user-deleted": "用户已删除。",
     "replay-min-duration-description": "只显示时长达到或超过此值的回放。",
     "viewed-page": "已浏览页面",
-    "visitor-log": "来自 <b>{country}</b> 的访客在搭载 <b>{os}</b> 的 <b>{device}</b> 上使用 <b>{browser}</b> 浏览器进行访问。"
+    "visitor-log": "来自 <b>{country}</b> 的访客在搭载 <b>{os}</b> 的 <b>{device}</b> 上使用 <b>{browser}</b> 浏览器进行访问。",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

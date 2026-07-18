@@ -380,7 +380,18 @@
     "website-id": "ID webu",
     "websites": "Weby",
     "window": "Okno",
-    "yesterday": "Včera"
+    "yesterday": "Včera",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Zadajte {confirmation} do poľa nižšie na potvrdenie.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Zobrazovať len nahrávky s touto alebo dlhšou dĺžkou.",
     "viewed-page": "Zobrazená stránka",
     "upgrade-required": "Táto funkcia vyžaduje predplatné plánu {plan}.",
-    "visitor-log": "Návštevník z <b>{country}</b> s prehliadačom <b>{browser}</b> na <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Návštevník z <b>{country}</b> s prehliadačom <b>{browser}</b> na <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

@@ -380,7 +380,18 @@
     "website-id": "ID do sitio web",
     "websites": "Sitios web",
     "window": "Ventá",
-    "yesterday": "Onte"
+    "yesterday": "Onte",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "Escribe {confirmation} na caixa de embaixo para confirmar.",
@@ -434,6 +445,8 @@
     "replay-min-duration-description": "Mostrar só as repeticións con esta duración ou superior.",
     "viewed-page": "Páxina vista",
     "upgrade-required": "Esta función require unha subscrición ao plan {plan}.",
-    "visitor-log": "Visitante desde <b>{country}</b> usando <b>{browser}</b> en <b>{os}</b> <b>{device}</b>"
+    "visitor-log": "Visitante desde <b>{country}</b> usando <b>{browser}</b> en <b>{os}</b> <b>{device}</b>",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }

@@ -370,7 +370,18 @@
     "website-id": "ဝက်ဘ်ဆိုဒ် အိုင်ဒီ",
     "websites": "ဝက်ဘ်ဆိုဒ်များ",
     "window": "ဝင်းဒိုး",
-    "yesterday": "မနေ့က"
+    "yesterday": "မနေ့က",
+    "invite-user": "Invite user",
+    "send-invitation": "Send invitation",
+    "pending-invitations": "Pending invitations",
+    "no-pending-invitations": "No pending invitations",
+    "set-password": "Set your password",
+    "create-account": "Create account",
+    "display-name": "Display name",
+    "revoke": "Revoke",
+    "expires": "Expires",
+    "share-team": "Share a team (optional)",
+    "invitation-sent": "Invitation sent"
   },
   "message": {
     "action-confirmation": "အတည်ပြုရန် အောက်ပါအကွက်တွင် {confirmation} ကို ရိုက်ထည့်ပါ။",
@@ -422,6 +433,8 @@
     "user-deleted": "အသုံးပြုသူ ဖျက်ပြီးပါပြီ",
     "replay-min-duration-description": "ဤကြာချိန် သို့မဟုတ် ၎င်းထက်ပိုသော ပြန်ဖွင့်မှုများကိုသာ ပြပါ။",
     "viewed-page": "ကြည့်ရှုခဲ့သောစာမျက်နှာ",
-    "visitor-log": "<b>{country}</b> မှ <b>{browser}</b> ဖြင့် <b>{os}</b> <b>{device}</b> တွင် ဝင်ရောက်ကြည့်ရှုသူ"
+    "visitor-log": "<b>{country}</b> မှ <b>{browser}</b> ဖြင့် <b>{os}</b> <b>{device}</b> တွင် ဝင်ရောက်ကြည့်ရှုသူ",
+    "invalid-invitation": "This invitation is no longer valid or has expired.",
+    "username-taken": "That username is already taken."
   }
 }
