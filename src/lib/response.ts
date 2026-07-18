@@ -54,6 +54,29 @@ export function notFound(error?: Record<string, any>) {
   );
 }
 
+export function tooManyRequests(error?: Record<string, any>) {
+  return Response.json(
+    {
+      error: { message: 'Too many requests', code: 'too-many-requests', status: 429, ...error },
+    },
+    { status: 429 },
+  );
+}
+
+export function serviceUnavailable(error?: Record<string, any>) {
+  return Response.json(
+    {
+      error: {
+        message: 'Service unavailable',
+        code: 'service-unavailable',
+        status: 503,
+        ...error,
+      },
+    },
+    { status: 503 },
+  );
+}
+
 export function serverError(error?: unknown) {
   if (error && typeof error !== 'string') {
     // eslint-disable-next-line no-console

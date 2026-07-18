@@ -27,6 +27,7 @@ model User {
   teams     TeamUser[]
   reports   Report[]
   boards    Board[]    @relation("user")
+  invitations Invitation[] @relation("invitedBy")
 
   @@map("user")
 }
@@ -209,9 +210,32 @@ model Team {
   links    Link[]
   pixels   Pixel[]
   boards    Board[]
+  invitations Invitation[]
 
   @@index([accessCode])
   @@map("team")
+}
+
+model Invitation {
+  id         String    @id() @map("invitation_id") @db.Uuid
+  email      String    @db.VarChar(255)
+  role       String    @db.VarChar(50)
+  tokenHash  String    @unique() @map("token_hash") @db.VarChar(128)
+  teamId     String?   @map("team_id") @db.Uuid
+  teamRole   String?   @map("team_role") @db.VarChar(50)
+  invitedBy  String    @map("invited_by") @db.Uuid
+  expiresAt  DateTime  @map("expires_at") @db.Timestamptz(6)
+  acceptedAt DateTime? @map("accepted_at") @db.Timestamptz(6)
+  createdAt  DateTime? @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt  DateTime? @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  inviter User  @relation("invitedBy", fields: [invitedBy], references: [id])
+  team    Team? @relation(fields: [teamId], references: [id])
+
+  @@index([email])
+  @@index([teamId])
+  @@index([invitedBy])
+  @@map("invitation")
 }
 
 model TeamUser {
