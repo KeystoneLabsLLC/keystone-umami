@@ -16,7 +16,6 @@ const collectApiEndpoint = process.env.COLLECT_API_ENDPOINT || '';
 const corsMaxAge = process.env.CORS_MAX_AGE || '';
 const defaultCurrency = process.env.DEFAULT_CURRENCY || '';
 const defaultLocale = process.env.DEFAULT_LOCALE || '';
-const forceSSL = process.env.FORCE_SSL || '';
 const frameAncestors = process.env.ALLOWED_FRAME_URLS || '';
 const trackerScriptName = process.env.TRACKER_SCRIPT_NAME || '';
 const trackerScriptURL = process.env.TRACKER_SCRIPT_URL || '';
@@ -42,6 +41,11 @@ function normalizePath(url: string) {
 const apiUrlOrigin = getUrlOrigin(apiUrl);
 const connectSrc = ["'self'", 'https:', apiUrlOrigin].filter(Boolean).join(' ');
 
+// NOTE on 'unsafe-inline'/'unsafe-eval': style-src 'unsafe-inline' is required —
+// the UI (react-zen + inline style attributes) relies on it and CSP nonces do
+// not cover inline style attributes. Removing script-src 'unsafe-inline'/'eval'
+// requires nonce-based CSP via middleware and must be verified against the
+// authenticated app (charts) and the cross-origin tracker before enabling.
 const contentSecurityPolicy = `
   default-src 'self';
   img-src 'self' https: data: blob:;
@@ -50,6 +54,9 @@ const contentSecurityPolicy = `
   connect-src ${connectSrc};
   frame-src 'self' http: https:;
   frame-ancestors 'self' ${frameAncestors};
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self';
 `;
 
 const defaultHeaders = [
@@ -61,14 +68,25 @@ const defaultHeaders = [
     key: 'Content-Security-Policy',
     value: contentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
   },
-];
-
-if (forceSSL) {
-  defaultHeaders.push({
+  {
+    key: 'Referrer-Policy',
+    value: 'strict-origin-when-cross-origin',
+  },
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
+  },
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()',
+  },
+  // HSTS is only honored over HTTPS (ignored on plain HTTP), so it is safe to
+  // always send. Production (Vercel) is HTTPS-only.
+  {
     key: 'Strict-Transport-Security',
     value: 'max-age=63072000; includeSubDomains; preload',
-  });
-}
+  },
+];
 
 const trackerHeaders = [
   {
