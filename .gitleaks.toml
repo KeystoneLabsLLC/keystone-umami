@@ -1,0 +1,15 @@
+# Gitleaks config for the CI secret scan. Uses the default rule set and
+# excludes vendored / generated / build output and the lockfile, which are not
+# our source and produce false positives (example keys in deps, minified
+# bundles, hashes). The scan still covers all first-party source.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Vendored, generated, build output, and lockfile"
+paths = [
+  '''node_modules/''',
+  '''\.next/''',
+  '''src/generated/''',
+  '''pnpm-lock\.yaml''',
+]

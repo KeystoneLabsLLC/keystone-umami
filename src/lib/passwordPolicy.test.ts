@@ -44,8 +44,9 @@ describe('validatePasswordStrength', () => {
 });
 
 describe('isPasswordBreached (HIBP k-anonymity)', () => {
-  // SHA-1 of "password" = 5BAA6...; suffix after first 5 chars:
-  const PASSWORD_SUFFIX = '1E4C9B93F3F0682250B6CF8331B7EE68FD8';
+  // SHA-1 of "password" = 5BAA6...; suffix after first 5 chars (public HIBP test
+  // vector, not a secret):
+  const PASSWORD_SUFFIX = '1E4C9B93F3F0682250B6CF8331B7EE68FD8'; // gitleaks:allow
 
   test('detects a breached password from the range response', async () => {
     const fetchImpl = mockFetch(`${PASSWORD_SUFFIX}:99999\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA:1`);

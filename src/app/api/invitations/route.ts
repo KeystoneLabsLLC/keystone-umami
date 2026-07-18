@@ -1,3 +1,4 @@
+import { serializeError } from 'serialize-error';
 import { z } from 'zod';
 import { getAppUrl, isEmailConfigured, isValidEmail, sendEmail } from '@/lib/email';
 import { inviteEmail } from '@/lib/emailTemplates';
@@ -6,7 +7,6 @@ import { parseRequest } from '@/lib/request';
 import {
   badRequest,
   json,
-  serverError,
   serviceUnavailable,
   tooManyRequests,
   unauthorized,
@@ -128,7 +128,20 @@ export async function POST(request: Request) {
   } catch (e) {
     // Roll back so we never leave an invite that was never delivered.
     await deleteInvitation(invitation.id).catch(() => {});
-    return serverError(e);
+    // Log the real provider error server-side; return a clear, email-specific
+    // code so the admin knows to check the email configuration.
+    // eslint-disable-next-line no-console
+    console.log(serializeError(e));
+    return Response.json(
+      {
+        error: {
+          message: 'Could not send the invitation email',
+          code: 'email-send-failed',
+          status: 502,
+        },
+      },
+      { status: 502 },
+    );
   }
 
   return json({

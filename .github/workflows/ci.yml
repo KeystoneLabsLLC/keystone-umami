@@ -1,27 +1,64 @@
-name: Node.js CI
+name: CI
 
-on: [push]
+# Security + quality gate for this fork. Runs on every PR and on pushes to
+# master. Lint / typecheck / tests / build / secret-scan are blocking; the
+# dependency audit and SAST scan are informational (see notes below).
+on:
+  push:
+    branches: [master]
+  pull_request:
 
 env:
-  DATABASE_URL: "postgresql://user:pass@localhost:5432/dummy"
-  SKIP_DB_CHECK: 1
+  # Dummy values so env/build checks pass without a real database in CI.
+  DATABASE_URL: 'postgresql://user:pass@localhost:5432/dummy'
+  SKIP_DB_CHECK: '1'
 
 jobs:
-  build:
-    if: github.repository == 'umami-software/umami'
-    runs-on: blacksmith-4vcpu-ubuntu-2404
-
+  quality:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: pnpm/action-setup@v4
         with:
           version: 10.15.1
           run_install: false
-      - name: Use Node.js 22
-        uses: actions/setup-node@v4
+
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "pnpm"
-      - run: pnpm install
-      - run: pnpm test
-      - run: pnpm build
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm build-db-client
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm exec tsc --noEmit
+
+      - name: Test
+        run: pnpm test
+
+      - name: Build
+        run: pnpm exec next build --turbo
+
+      - name: Secret scan (gitleaks)
+        run: |
+          curl -sSfL "https://github.com/gitleaks/gitleaks/releases/download/v8.21.2/gitleaks_8.21.2_linux_x64.tar.gz" | tar -xz gitleaks
+          ./gitleaks detect --no-git --no-banner --redact --config .gitleaks.toml --source .
+
+      - name: Dependency audit (informational)
+        # Advisories are inherited from upstream Umami and sit almost entirely in
+        # dev/build tooling, triaged as non-reachable in the deployed app. This
+        # reports at high+ but does not block. Revisit as upstream updates deps.
+        continue-on-error: true
+        run: pnpm audit --audit-level=high
+
+      - name: SAST — Semgrep (informational)
+        continue-on-error: true
+        run: docker run --rm -v "$PWD:/src" semgrep/semgrep semgrep scan --config auto --error
