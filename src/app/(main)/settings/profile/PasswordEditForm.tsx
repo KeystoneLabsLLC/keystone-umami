@@ -42,7 +42,7 @@ export function PasswordEditForm({ onSave, onClose }) {
         label={t(labels.newPassword)}
         rules={{
           required: 'Required',
-          minLength: { value: 8, message: t(messages.minPasswordLength, { n: '8' }) },
+          minLength: { value: 10, message: t(messages.minPasswordLength, { n: '10' }) },
         }}
       >
         <PasswordField autoComplete="new-password" />
@@ -52,7 +52,7 @@ export function PasswordEditForm({ onSave, onClose }) {
         label={t(labels.confirmPassword)}
         rules={{
           required: t(labels.required),
-          minLength: { value: 8, message: t(messages.minPasswordLength, { n: '8' }) },
+          minLength: { value: 10, message: t(messages.minPasswordLength, { n: '10' }) },
           validate: samePassword,
         }}
       >

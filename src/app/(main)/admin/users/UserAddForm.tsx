@@ -39,7 +39,7 @@ export function UserAddForm({ onSave, onClose }) {
         name="password"
         rules={{
           required: t(labels.required),
-          minLength: { value: 8, message: t(messages.minPasswordLength, { n: '8' }) },
+          minLength: { value: 10, message: t(messages.minPasswordLength, { n: '10' }) },
         }}
       >
         <PasswordField autoComplete="new-password" data-test="input-password" />

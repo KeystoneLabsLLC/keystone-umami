@@ -2,6 +2,7 @@ import { z } from 'zod';
 import { ROLES } from '@/lib/constants';
 import { uuid } from '@/lib/crypto';
 import { hashPassword } from '@/lib/password';
+import { checkPasswordStrength, MIN_PASSWORD_LENGTH } from '@/lib/passwordPolicy';
 import { parseRequest } from '@/lib/request';
 import { badRequest, json, unauthorized } from '@/lib/response';
 import { userRoleParam } from '@/lib/schema';
@@ -12,7 +13,7 @@ export async function POST(request: Request) {
   const schema = z.object({
     id: z.uuid().optional(),
     username: z.string().max(255),
-    password: z.string().min(8).max(255),
+    password: z.string().min(MIN_PASSWORD_LENGTH).max(255),
     role: userRoleParam,
   });
 
@@ -27,6 +28,12 @@ export async function POST(request: Request) {
   }
 
   const { id, username, password, role } = body;
+
+  const weak = await checkPasswordStrength(password, { username });
+
+  if (weak) {
+    return badRequest({ code: weak, message: 'Password does not meet requirements' });
+  }
 
   const existingUser = await getUserByUsername(username, { showDeleted: true });
 

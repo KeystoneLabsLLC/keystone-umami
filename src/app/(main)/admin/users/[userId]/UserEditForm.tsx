@@ -38,7 +38,7 @@ export function UserEditForm({ userId, onSave }: { userId: string; onSave?: () =
         name="password"
         label={t(labels.password)}
         rules={{
-          minLength: { value: 8, message: t(messages.minPasswordLength, { n: '8' }) },
+          minLength: { value: 10, message: t(messages.minPasswordLength, { n: '10' }) },
         }}
       >
         <PasswordField autoComplete="new-password" data-test="input-password" />

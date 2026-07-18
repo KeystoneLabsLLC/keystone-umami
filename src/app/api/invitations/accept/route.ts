@@ -6,6 +6,7 @@ import { hash, secret, uuid } from '@/lib/crypto';
 import { hashInviteToken, isInviteExpired } from '@/lib/invitation';
 import { createSecureToken } from '@/lib/jwt';
 import { hashPassword } from '@/lib/password';
+import { checkPasswordStrength, MIN_PASSWORD_LENGTH } from '@/lib/passwordPolicy';
 import redis from '@/lib/redis';
 import { parseRequest } from '@/lib/request';
 import { badRequest, json } from '@/lib/response';
@@ -24,7 +25,7 @@ export async function POST(request: Request) {
   const schema = z.object({
     token: z.string().min(1).max(512),
     username: z.string().min(1).max(255),
-    password: z.string().min(8).max(255),
+    password: z.string().min(MIN_PASSWORD_LENGTH).max(255),
     displayName: z.string().max(255).optional(),
   });
 
@@ -44,6 +45,12 @@ export async function POST(request: Request) {
   }
 
   const username = body.username.trim().toLowerCase();
+
+  const weak = await checkPasswordStrength(body.password, { username });
+
+  if (weak) {
+    return badRequest({ code: weak, message: 'Password does not meet requirements' });
+  }
 
   const existingUser = await getUserByUsername(username, { showDeleted: true });
 

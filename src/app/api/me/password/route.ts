@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { checkPassword, hashPassword } from '@/lib/password';
+import { checkPasswordStrength, MIN_PASSWORD_LENGTH } from '@/lib/passwordPolicy';
 import { parseRequest } from '@/lib/request';
 import { badRequest, json } from '@/lib/response';
 import { getUser, updateUser } from '@/queries/prisma/user';
@@ -7,7 +8,7 @@ import { getUser, updateUser } from '@/queries/prisma/user';
 export async function POST(request: Request) {
   const schema = z.object({
     currentPassword: z.string(),
-    newPassword: z.string().min(8),
+    newPassword: z.string().min(MIN_PASSWORD_LENGTH),
   });
 
   const { auth, body, error } = await parseRequest(request, schema);
@@ -23,6 +24,12 @@ export async function POST(request: Request) {
 
   if (!checkPassword(currentPassword, user.password)) {
     return badRequest({ message: 'Current password is incorrect' });
+  }
+
+  const weak = await checkPasswordStrength(newPassword, { username: user.username });
+
+  if (weak) {
+    return badRequest({ code: weak, message: 'Password does not meet requirements' });
   }
 
   const password = hashPassword(newPassword);
