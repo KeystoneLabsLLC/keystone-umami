@@ -308,6 +308,7 @@ export const labels: Record<string, string> = {
   referral: 'label.referral',
   affiliate: 'label.affiliate',
   email: 'label.email',
+  noTeamAccess: 'label.no-team-access',
   inviteUser: 'label.invite-user',
   sendInvitation: 'label.send-invitation',
   pendingInvitations: 'label.pending-invitations',

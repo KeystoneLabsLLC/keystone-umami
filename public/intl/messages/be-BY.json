@@ -381,7 +381,8 @@
     "revoke": "Revoke",
     "expires": "Expires",
     "share-team": "Share a team (optional)",
-    "invitation-sent": "Invitation sent"
+    "invitation-sent": "Invitation sent",
+    "no-team-access": "You don't belong to any team yet. Contact your administrator for access."
   },
   "message": {
     "action-confirmation": "Увядзіце {confirmation} у поле ніжэй, каб пацвердзіць.",
