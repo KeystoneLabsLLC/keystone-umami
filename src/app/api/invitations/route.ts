@@ -47,6 +47,14 @@ export async function POST(request: Request) {
     return serviceUnavailable({ message: 'Email is not configured on the server' });
   }
 
+  // Fail closed: the invite link host must come from trusted config, never from
+  // the request Host header (which an attacker could spoof to poison the link).
+  const base = getAppUrl();
+
+  if (!base) {
+    return serviceUnavailable({ message: 'APP_URL is not configured on the server' });
+  }
+
   const email = body.email.trim().toLowerCase();
   const { role } = body;
 
@@ -103,9 +111,8 @@ export async function POST(request: Request) {
     teamRole,
   });
 
-  // Build the accept link from the configured public URL, falling back to the
-  // request origin. The raw token appears only here, never in storage.
-  const base = getAppUrl() || new URL(request.url).origin;
+  // Build the accept link from the trusted public URL validated above. The raw
+  // token appears only here, never in storage.
   const acceptUrl = `${base}/invite/${token}`;
 
   try {
