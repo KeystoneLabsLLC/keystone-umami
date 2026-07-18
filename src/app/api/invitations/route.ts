@@ -1,5 +1,6 @@
 import { serializeError } from 'serialize-error';
 import { z } from 'zod';
+import { ROLES } from '@/lib/constants';
 import { getAppUrl, isEmailConfigured, isValidEmail, sendEmail } from '@/lib/email';
 import { inviteEmail } from '@/lib/emailTemplates';
 import { generateInviteToken, getInviteExpiry, INVITE_TTL_MS } from '@/lib/invitation';
@@ -11,7 +12,6 @@ import {
   tooManyRequests,
   unauthorized,
 } from '@/lib/response';
-import { teamRoleParam, userRoleParam } from '@/lib/schema';
 import { canCreateUser } from '@/permissions';
 import {
   countRecentInvitations,
@@ -19,18 +19,30 @@ import {
   deleteInvitation,
   getPendingInvitationByEmail,
   getTeam,
+  getUserByUsername,
   listPendingInvitations,
 } from '@/queries/prisma';
 
 // Durable, DB-backed rate limit: max invites a single admin may create per hour.
 const MAX_INVITES_PER_HOUR = 20;
 
+// One invite role → the account role and (if a team is attached) the team role.
+const ACCOUNT_ROLE: Record<string, string> = {
+  'view-only': ROLES.viewOnly,
+  member: ROLES.user,
+  manager: ROLES.user,
+};
+const TEAM_ROLE: Record<string, string> = {
+  'view-only': ROLES.teamViewOnly,
+  member: ROLES.teamMember,
+  manager: ROLES.teamManager,
+};
+
 export async function POST(request: Request) {
   const schema = z.object({
     email: z.string().max(255),
-    role: userRoleParam,
+    role: z.enum(['view-only', 'member', 'manager']),
     teamId: z.uuid().optional(),
-    teamRole: teamRoleParam.optional(),
   });
 
   const { auth, body, error } = await parseRequest(request, schema);
@@ -56,22 +68,26 @@ export async function POST(request: Request) {
   }
 
   const email = body.email.trim().toLowerCase();
-  const { role } = body;
 
   if (!isValidEmail(email)) {
     return badRequest({ message: 'Invalid email address' });
   }
 
-  // Team is optional; if a team is chosen a team role is required, and vice versa.
+  // The username is the email, so reject if that account already exists.
+  if (await getUserByUsername(email, { showDeleted: true })) {
+    return badRequest({ message: 'A user with this email already exists' });
+  }
+
+  // Derive the account role and (if a team is attached) the team role from the
+  // single invite role.
+  const role = ACCOUNT_ROLE[body.role];
+
+  // Team is optional; if attached, the team role is derived from the same role.
   let teamId: string | null = null;
   let teamRole: string | null = null;
   let teamName: string | undefined;
 
-  if (body.teamId || body.teamRole) {
-    if (!body.teamId || !body.teamRole) {
-      return badRequest({ message: 'Both team and team role are required to share a team' });
-    }
-
+  if (body.teamId) {
     const team = await getTeam(body.teamId);
 
     if (!team) {
@@ -79,7 +95,7 @@ export async function POST(request: Request) {
     }
 
     teamId = body.teamId;
-    teamRole = body.teamRole;
+    teamRole = TEAM_ROLE[body.role];
     teamName = team.name;
   }
 

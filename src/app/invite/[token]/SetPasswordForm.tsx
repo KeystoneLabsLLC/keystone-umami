@@ -52,14 +52,6 @@ export function SetPasswordForm({
         </Text>
       )}
       <Form onSubmit={handleSubmit} error={getErrorMessage(error)} style={{ minWidth: 300 }}>
-        <FormField
-          label={t(labels.username)}
-          name="username"
-          rules={{ required: t(labels.required) }}
-        >
-          <TextField autoComplete="username" />
-        </FormField>
-
         <FormField label={t(labels.displayName)} name="displayName">
           <TextField autoComplete="name" />
         </FormField>
