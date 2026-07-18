@@ -24,7 +24,6 @@ import {
 export async function POST(request: Request) {
   const schema = z.object({
     token: z.string().min(1).max(512),
-    username: z.string().min(1).max(255),
     password: z.string().min(MIN_PASSWORD_LENGTH).max(255),
     displayName: z.string().max(255).optional(),
   });
@@ -44,7 +43,8 @@ export async function POST(request: Request) {
     });
   }
 
-  const username = body.username.trim().toLowerCase();
+  // The username is the invited email — the invitee never chooses one.
+  const username = invitation.email;
 
   const weak = await checkPasswordStrength(body.password, { username });
 
@@ -55,7 +55,10 @@ export async function POST(request: Request) {
   const existingUser = await getUserByUsername(username, { showDeleted: true });
 
   if (existingUser) {
-    return badRequest({ code: 'username-taken', message: 'That username is already taken' });
+    return badRequest({
+      code: 'username-taken',
+      message: 'An account for this email already exists',
+    });
   }
 
   const userId = uuid();
