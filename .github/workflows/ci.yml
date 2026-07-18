@@ -50,7 +50,7 @@ jobs:
       - name: Secret scan (gitleaks)
         run: |
           curl -sSfL "https://github.com/gitleaks/gitleaks/releases/download/v8.21.2/gitleaks_8.21.2_linux_x64.tar.gz" | tar -xz gitleaks
-          ./gitleaks detect --no-git --no-banner --redact --source .
+          ./gitleaks detect --no-git --no-banner --redact --config .gitleaks.toml --source .
 
       - name: Dependency audit (informational)
         # Advisories are inherited from upstream Umami and sit almost entirely in
