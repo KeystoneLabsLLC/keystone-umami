@@ -4,13 +4,12 @@ import {
   FormButtons,
   FormField,
   FormSubmitButton,
-  Icon,
   PasswordField,
   TextField,
 } from '@umami/react-zen';
 import { useRouter } from 'next/navigation';
 import { useMessages, useUpdateQuery } from '@/components/hooks';
-import { Logo } from '@/components/svg';
+import { LogoLockup } from '@/components/svg';
 import { setClientAuthToken } from '@/lib/client';
 import { setUser } from '@/store/app';
 
@@ -31,9 +30,7 @@ export function LoginForm() {
 
   return (
     <Column justifyContent="center" alignItems="center" gap="6">
-      <Icon size="xl">
-        <Logo />
-      </Icon>
+      <LogoLockup style={{ width: 150, height: 'auto' }} />
       <Form onSubmit={handleSubmit} error={getErrorMessage(error)} style={{ minWidth: 300 }}>
         <FormField
           label={t(labels.username)}

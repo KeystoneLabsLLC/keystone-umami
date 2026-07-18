@@ -18,6 +18,7 @@ export { default as Lightning } from './Lightning';
 export { default as Location } from './Location';
 export { default as Lock } from './Lock';
 export { default as Logo } from './Logo';
+export { default as LogoLockup } from './LogoLockup';
 export { default as LogoWhite } from './LogoWhite';
 export { default as Magnet } from './Magnet';
 export { default as Money } from './Money';

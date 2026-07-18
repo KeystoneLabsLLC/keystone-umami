@@ -1,8 +1,8 @@
 'use client';
-import { Column, Icon, Loading, Text } from '@umami/react-zen';
+import { Column, Loading, Text } from '@umami/react-zen';
 import Link from 'next/link';
 import { useApi, useMessages } from '@/components/hooks';
-import { Logo } from '@/components/svg';
+import { LogoLockup } from '@/components/svg';
 import { SetPasswordForm } from './SetPasswordForm';
 
 export function InvitePage({ token }: { token: string }) {
@@ -24,9 +24,7 @@ export function InvitePage({ token }: { token: string }) {
       style={{ paddingTop: '15vh' }}
     >
       <Column alignItems="center" gap="6">
-        <Icon size="xl">
-          <Logo />
-        </Icon>
+        <LogoLockup style={{ width: 150, height: 'auto' }} />
         {children}
       </Column>
     </Column>
